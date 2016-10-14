@@ -4,15 +4,21 @@ zul.spectrum.Spectrum = zk.$extends(zk.Widget, {
             var n = this.$n();
             if (n)
                 s.spectrum = s;
-        }
+        },
+        _color: null
     },
     bind_: function () {
         this.$supers(zul.spectrum.Spectrum, 'bind_', arguments);
+        var widget = this;
         var config = {
-            color: "#f00"
+            color: this.__color,
+            change: function (color) {
+                widget.fire('onChange', {
+                    color: color.toHexString()
+                });
+            }
         };
-        this.setSpectrum(
-            $('#' + this.uuid).spectrum(config)
-        );
+        console.log(config);
+        this.setSpectrum($('#' + this.uuid).spectrum(config));
     }
 });
