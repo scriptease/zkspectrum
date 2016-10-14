@@ -1,4 +1,4 @@
-package org.zkoss.spectrum;
+package org.zkoss.color;
 
 import java.io.IOException;
 
@@ -10,10 +10,10 @@ import org.zkoss.zul.impl.XulElement;
 /**
  * @author Sean Connolly
  */
-public class Spectrum extends XulElement {
+public class ColorPicker extends XulElement {
 
 	static {
-		addClientEvent(Spectrum.class, Events.ON_CHANGE, ComponentCtrl.CE_IMPORTANT);
+		addClientEvent(ColorPicker.class, Events.ON_CHANGE, ComponentCtrl.CE_IMPORTANT);
 	}
 
 	private String color = "#fff";

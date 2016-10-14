@@ -1,14 +1,14 @@
-zul.spectrum.Spectrum = zk.$extends(zk.Widget, {
+zul.color.ColorPicker = zk.$extends(zk.Widget, {
     $define: {
-        spectrum: function (s) {
+        colorPicker: function (s) {
             var n = this.$n();
             if (n)
-                s.spectrum = s;
+                s.colorPicker = s;
         },
         _color: null
     },
     bind_: function () {
-        this.$supers(zul.spectrum.Spectrum, 'bind_', arguments);
+        this.$supers(zul.color.ColorPicker, 'bind_', arguments);
         var widget = this;
         var config = {
             color: this.__color,
@@ -19,6 +19,6 @@ zul.spectrum.Spectrum = zk.$extends(zk.Widget, {
             }
         };
         console.log(config);
-        this.setSpectrum($('#' + this.uuid).spectrum(config));
+        this.setColorPicker($('#' + this.uuid).colorPicker(config));
     }
 });

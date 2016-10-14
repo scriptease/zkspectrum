@@ -1,2 +1,2 @@
-# zkspectrum
-ZK wrapper for Spectrum color picker library.
+# zkcolorpicker
+ZK wrapper for ColorPicker library.
