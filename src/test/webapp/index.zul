@@ -1,0 +1,4 @@
+<div apply="org.zkoss.bind.BindComposer"
+     viewModel="@id('vm') @init('org.zkoss.spectrum.DemoViewModel')">
+    <spectrum/>
+</div>

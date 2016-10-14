@@ -16,7 +16,7 @@
         <widget-class>zul.spectrum.Spectrum</widget-class>
         <mold>
             <mold-name>default</mold-name>
-            <mold-uri>mold/spectrum.js</mold-uri>
+            <mold-uri>mold/default.js</mold-uri>
             <css-uri>lib/spectrum.css</css-uri>
         </mold>
     </component>

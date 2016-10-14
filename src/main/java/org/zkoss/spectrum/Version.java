@@ -1,4 +1,4 @@
-package org.zkoss.sortable;
+package org.zkoss.spectrum;
 
 /**
  * The version of the language addon.<br>
