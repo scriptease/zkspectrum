@@ -1,0 +1,24 @@
+<language-addon>
+    <addon-name>zkspectrum</addon-name>
+    <depends>zul</depends>
+    <language-name>xul/html</language-name>
+
+    <version>
+        <version-class>org.zkoss.spectrum.Version</version-class>
+        <version-uid>0.1</version-uid>
+        <zk-version>7.0.0</zk-version>
+        <!-- or later -->
+    </version>
+
+    <component>
+        <component-name>spectrum</component-name>
+        <component-class>org.zkoss.spectrum.Spectrum</component-class>
+        <widget-class>zul.spectrum.Spectrum</widget-class>
+        <mold>
+            <mold-name>default</mold-name>
+            <mold-uri>mold/spectrum.js</mold-uri>
+            <css-uri>lib/spectrum.css</css-uri>
+        </mold>
+    </component>
+
+</language-addon>
