@@ -4,7 +4,7 @@
         <label value="Black (Default)"/>
     </div>
     <div style="display:block">
-        <spectrum value="#000"/>
+        <spectrum value="#000" preferredFormat="hex"/>
         <label value="Black"/>
     </div>
     <div style="display:block">

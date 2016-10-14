@@ -16,7 +16,7 @@ public class Spectrum extends Textbox {
 		addClientEvent(Spectrum.class, Events.ON_CHANGE, ComponentCtrl.CE_IMPORTANT);
 	}
 
-	private String preferredFormat = "hex";
+	private String preferredFormat = null;
 	private Boolean flat = false;
 	private Boolean showInput = false;
 	private Boolean showInitial = false;
