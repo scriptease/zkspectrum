@@ -5,7 +5,7 @@
 
     <groupId>org.zkoss</groupId>
     <artifactId>zkspectrum</artifactId>
-    <version>0.1-SNAPSHOT</version>
+    <version>1.8.0.0-SNAPSHOT</version>
 
     <name>ZK Spectrum</name>
     <description>ZK wrapper for Spectrum (https://bgrins.github.io/spectrum/)</description>

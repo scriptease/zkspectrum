@@ -8,6 +8,6 @@ package org.zkoss.color;
  */
 public class Version {
 
-	public static final String UID = "0.1";
+	public static final String UID = "1.8.0";
 
 }
