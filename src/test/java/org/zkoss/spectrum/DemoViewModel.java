@@ -1,4 +1,4 @@
-package org.zkoss.color;
+package org.zkoss.spectrum;
 
 import java.util.List;
 
@@ -26,13 +26,13 @@ public class DemoViewModel {
 	};
 
 	@Wire("sortable")
-	private List<ColorPicker> spectra;
+	private List<Spectrum> spectra;
 
 	@AfterCompose
 	public void afterCompose(@ContextParam(ContextType.VIEW) Component view) {
 		Selectors.wireComponents(view, this, false);
-		for(ColorPicker colorpicker : spectra) {
-			colorpicker.addEventListener(Events.ON_CHANGE, EVENT_PRINTER);
+		for(Spectrum spectrum : spectra) {
+			spectrum.addEventListener(Events.ON_CHANGE, EVENT_PRINTER);
 		}
 	}
 

@@ -4,17 +4,17 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.zkoss</groupId>
-    <artifactId>zkcolorpicker</artifactId>
+    <artifactId>zkspectrum</artifactId>
     <version>0.1-SNAPSHOT</version>
 
     <name>ZK Spectrum</name>
-    <description>ZK wrapper for ColorPicker (http://www.dematte.at/colorPicker/)</description>
-    <url>https://github.com/connollyst/zkcolorpicker</url>
+    <description>ZK wrapper for Spectrum (https://bgrins.github.io/spectrum/)</description>
+    <url>https://github.com/connollyst/zkspectrum</url>
 
     <scm>
-        <url>https://github.com/connollyst/zkcolorpicker</url>
-        <connection>scm:git:git://github.com/connollyst/zkcolorpicker.git</connection>
-        <developerConnection>scm:git:git@github.com:connollyst/zkcolorpicker.git</developerConnection>
+        <url>https://github.com/connollyst/zkspectrum</url>
+        <connection>scm:git:git://github.com/connollyst/zkspectrum.git</connection>
+        <developerConnection>scm:git:git@github.com:connollyst/zkspectrum.git</developerConnection>
         <tag>HEAD</tag>
     </scm>
 
