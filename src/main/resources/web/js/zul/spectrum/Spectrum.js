@@ -1,4 +1,4 @@
-zul.spectrum.Spectrum = zk.$extends(zk.Widget, {
+zul.spectrum.Spectrum = zk.$extends(zul.inp.Textbox, {
     $define: {
         spectrum: function (s) {
             var n = this.$n();
@@ -13,9 +13,9 @@ zul.spectrum.Spectrum = zk.$extends(zk.Widget, {
         var config = {
             color: this.__color,
             change: function (color) {
-                widget.fire('onChange', {
-                    color: color.toHexString()
-                });
+                console.log('got: '+color.toHexString());
+                //widget.setValue(color.toHexString(), false);
+                widget.updateChange_();
             }
         };
         console.log(config);

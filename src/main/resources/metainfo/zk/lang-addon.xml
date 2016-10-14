@@ -14,6 +14,7 @@
         <component-name>spectrum</component-name>
         <component-class>org.zkoss.spectrum.Spectrum</component-class>
         <widget-class>zul.spectrum.Spectrum</widget-class>
+        <extends>textbox</extends>
         <mold>
             <mold-name>default</mold-name>
             <mold-uri>mold/default.js</mold-uri>

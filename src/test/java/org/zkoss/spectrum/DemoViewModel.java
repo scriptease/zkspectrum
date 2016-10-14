@@ -6,9 +6,9 @@ import org.zkoss.bind.annotation.AfterCompose;
 import org.zkoss.bind.annotation.ContextParam;
 import org.zkoss.bind.annotation.ContextType;
 import org.zkoss.zk.ui.Component;
-import org.zkoss.zk.ui.event.Event;
 import org.zkoss.zk.ui.event.EventListener;
 import org.zkoss.zk.ui.event.Events;
+import org.zkoss.zk.ui.event.InputEvent;
 import org.zkoss.zk.ui.select.Selectors;
 import org.zkoss.zk.ui.select.annotation.Wire;
 
@@ -17,15 +17,15 @@ import org.zkoss.zk.ui.select.annotation.Wire;
  */
 public class DemoViewModel {
 
-	private static final EventListener<Event> EVENT_PRINTER = new EventListener<Event>() {
+	private static final EventListener<InputEvent> EVENT_PRINTER = new EventListener<InputEvent>() {
 
 		@Override
-		public void onEvent(Event event) {
-			System.out.println(event.getName() + ": " + event);
+		public void onEvent(InputEvent event) {
+			System.out.println(event.getName() + ": " + event.getValue());
 		}
 	};
 
-	@Wire("sortable")
+	@Wire("spectrum")
 	private List<Spectrum> spectra;
 
 	@AfterCompose
