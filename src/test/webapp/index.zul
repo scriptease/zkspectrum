@@ -1,15 +1,14 @@
-<div apply="org.zkoss.bind.BindComposer"
-     viewModel="@id('vm') @init('org.zkoss.spectrum.DemoViewModel')">
+<div apply="org.zkoss.bind.BindComposer" viewModel="@id('vm') @init('org.zkoss.spectrum.DemoViewModel')">
     <div style="display:block">
         <spectrum/>
-        <label value="White (Default)"/>
+        <label value="Black (Default)"/>
     </div>
     <div style="display:block">
-        <spectrum color="#000"/>
+        <spectrum value="#000"/>
         <label value="Black"/>
     </div>
     <div style="display:block">
-        <spectrum color="#f30"/>
+        <spectrum value="#f30" preferredFormat="rgb"/>
         <label value="Red:"/>
     </div>
 </div>

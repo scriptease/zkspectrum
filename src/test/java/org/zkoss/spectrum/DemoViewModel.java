@@ -22,6 +22,7 @@ public class DemoViewModel {
 		@Override
 		public void onEvent(InputEvent event) {
 			System.out.println(event.getName() + ": " + event.getValue());
+			System.out.println("Value: " + ((Spectrum)event.getTarget()).getValue());
 		}
 	};
 

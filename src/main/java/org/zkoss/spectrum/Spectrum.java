@@ -16,19 +16,23 @@ public class Spectrum extends Textbox {
 		addClientEvent(Spectrum.class, Events.ON_CHANGE, ComponentCtrl.CE_IMPORTANT);
 	}
 
-	private String color = "#fff";
+	private String preferredFormat = "hex";
 
-	public void setColor(String color) {
-		if(this.color == null || color == null || !this.color.equals(color)) {
-			this.color = color;
-			smartUpdate("_color", color);
+	public String getPreferredFormat() {
+		return preferredFormat;
+	}
+
+	public void setPreferredFormat(String preferredFormat) {
+		if(this.preferredFormat == null || preferredFormat == null || !this.preferredFormat.equals(preferredFormat)) {
+			this.preferredFormat = preferredFormat;
+			smartUpdate("_preferredFormat", preferredFormat);
 		}
 	}
 
 	@Override
 	protected void renderProperties(ContentRenderer renderer) throws IOException {
 		super.renderProperties(renderer);
-		render(renderer, "_color", color);
+		render(renderer, "_preferredFormat", preferredFormat);
 	}
 
 }

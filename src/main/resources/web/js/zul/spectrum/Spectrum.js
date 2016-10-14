@@ -5,16 +5,14 @@ zul.spectrum.Spectrum = zk.$extends(zul.inp.Textbox, {
             if (n)
                 s.spectrum = s;
         },
-        _color: null
+        _preferredFormat: null
     },
     bind_: function () {
         this.$supers(zul.spectrum.Spectrum, 'bind_', arguments);
         var widget = this;
         var config = {
-            color: this.__color,
+            preferredFormat: this.__preferredFormat,
             change: function (color) {
-                console.log('got: '+color.toHexString());
-                //widget.setValue(color.toHexString(), false);
                 widget.updateChange_();
             }
         };
