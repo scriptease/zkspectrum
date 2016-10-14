@@ -11,4 +11,5 @@
         <spectrum value="#f30" preferredFormat="rgb"/>
         <label value="Red:"/>
     </div>
+    <spectrum value="#410567" preferredFormat="hsv" flat="true"/>
 </div>
