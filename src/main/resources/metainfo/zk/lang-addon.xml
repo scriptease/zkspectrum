@@ -4,7 +4,7 @@
     <language-name>xul/html</language-name>
 
     <version>
-        <version-class>org.zkoss.spectrum.Version</version-class>
+        <version-class>org.zkoss.color.Version</version-class>
         <version-uid>0.1</version-uid>
         <zk-version>7.0.0</zk-version>
         <!-- or later -->
@@ -12,8 +12,8 @@
 
     <component>
         <component-name>spectrum</component-name>
-        <component-class>org.zkoss.spectrum.Spectrum</component-class>
-        <widget-class>zul.spectrum.Spectrum</widget-class>
+        <component-class>org.zkoss.color.Spectrum</component-class>
+        <widget-class>zul.color.Spectrum</widget-class>
         <extends>textbox</extends>
         <mold>
             <mold-name>default</mold-name>

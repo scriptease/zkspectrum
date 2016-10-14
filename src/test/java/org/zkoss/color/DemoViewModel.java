@@ -1,4 +1,4 @@
-package org.zkoss.spectrum;
+package org.zkoss.color;
 
 import java.util.List;
 

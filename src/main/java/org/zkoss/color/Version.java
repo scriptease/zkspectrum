@@ -1,4 +1,4 @@
-package org.zkoss.spectrum;
+package org.zkoss.color;
 
 /**
  * The version of the language addon.<br>

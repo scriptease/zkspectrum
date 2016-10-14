@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<package name="zul.spectrum" language="xul/html" depends="zul.inp">
+<package name="zul.color" language="xul/html" depends="zul.inp">
     <script src="lib/spectrum.js"/>
     <widget name="Spectrum"/>
 </package>
