@@ -8,7 +8,20 @@
 
     <name>ZK Spectrum</name>
     <description>ZK wrapper for Spectrum (https://bgrins.github.io/spectrum/)</description>
-    <url>https://github.com/connollyst/zkspectrum</url>
+    <url>https://github.com/connollyst/zkspectrum</url> 
+    
+
+	<repositories>
+		<repository>
+			<id>zk repository</id>
+			<url>https://mavensync.zkoss.org/maven2</url>
+		</repository>
+		<repository>
+			<id>CW Nexus</id>
+			<url>https://nexus.caperwhite.com/repository/maven/</url>
+		</repository>
+	</repositories>
+    
 
     <scm>
         <url>https://github.com/connollyst/zkspectrum</url>
@@ -36,24 +49,24 @@
 
     <distributionManagement>
         <snapshotRepository>
-            <id>sonatype-nexus-snapshots</id>
-            <name>Sonatype Nexus snapshot repository</name>
+            <id>cw-nexus</id>
+            <name>CaperWhite nexus</name>
             <url>
-                https://oss.sonatype.org/content/repositories/snapshots
+                https://nexus.caperwhite.com/repository/caperwhite-snapshots
             </url>
         </snapshotRepository>
         <repository>
-            <id>sonatype-nexus-staging</id>
-            <name>Sonatype Nexus release repository</name>
+            <id>cw-nexus</id>
+            <name>CaperWhite nexus</name>
             <url>
-                https://oss.sonatype.org/service/local/staging/deploy/maven2
+                https://nexus.caperwhite.com/repository/caperwhite-releases
             </url>
         </repository>
     </distributionManagement>
 
     <properties>
-        <zk.version>8.0.1</zk.version>
-        <servlet.api.version>2.4</servlet.api.version>
+        <zk.version>7.0.2</zk.version>
+        <servlet.api.version>3.0.1</servlet.api.version>
         <maven.build.timestamp.format>yyyy-MM-dd</maven.build.timestamp.format>
         <packname>-${project.version}-FL-${maven.build.timestamp}</packname>
     </properties>
@@ -71,13 +84,6 @@
             <groupId>org.zkoss.zk</groupId>
             <artifactId>zkbind</artifactId>
             <version>${zk.version}</version>
-        </dependency>
-
-        <dependency>
-            <groupId>javax.servlet</groupId>
-            <artifactId>servlet-api</artifactId>
-            <version>${servlet.api.version}</version>
-            <scope>test</scope>
         </dependency>
     </dependencies>
 
